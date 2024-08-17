@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1F1F;
+    font-family: 'Lato', sans-serif;
+    color: rgba(235, 235, 235, 1);
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 150px;
+}
+
+.timers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    padding: 20px 50px;
+}
+
+.boxTimer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0;
+    align-items: center;
+    margin: 10px 0 10px;
+    background-color: #292929;
+}
+
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    text-align: center;
+    border: none;
+    background-color: #292929;
+    color: rgba(235, 235, 235, 1);
+    width: 100%;
+    font-size: 50px;
+    padding: 10px;
+    outline: none;
+    height: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.boxTimer label {
+    padding-bottom: 10px;
+    color: rgba(255, 255, 255, 0.48);
+    text-align: right;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+#hours {
+    border-radius: 10px 0 0 10px;
+}
+
+#seconds {
+    border-radius: 0px 10px 10px 0px;
+}
+
+#minutes {
+    border-radius: 0px 0px 0px 0px;
+}
+
+#boxTimer1 {
+    border-right: 0.1px solid rgba(235, 235, 235, 0.04);
+    border-radius: 10px 0 0 10px;
+}
+
+#boxTimer2 {
+    border-left: 0.1px solid rgba(235, 235, 235, 0.04);
+    border-right: 0.1px solid rgba(235, 235, 235, 0.04);
+}
+
+#boxTimer3 {
+    border-left: 0.1px solid rgba(235, 235, 235, 0.04);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.buttons {
+    border-radius: 10px;
+    display: table-column;
+    align-items: center;
+    padding: 10px;
+    content: 200px 180px;
+
+}
+
+#enter {
+    padding: 20px;
+    text-align: center;
+}
+
+#reset {
+    padding: 20px;
+}
+
+.displays {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    display: flex;
+    padding: 8px 10px;
+    justify-content: flex-end;
+    font-family: 'Lato', sans-serif;
+    align-items: flex-end;
+    background-color: #292929;
+    color: rgba(235, 235, 235, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    width: 100px;
+    white-space: nowrap;
+
+}
+
+.displays:hover {
+    background-color: #2f2f2f;
+}
+
+.displays:active {
+    background-color: #252525;
+}
+
+.linkPage{
+    text-decoration: none;
+}
+.linkPage:hover{
+    text-decoration: none;
+}
+
+.linkPage:hover{
+    text-decoration: none;
+}
+
+.linkPage:visited {
+    color: rgba(235, 235, 235, 1);
+    text-decoration: none;
+}
+
+.linkPage:active{
+    text-decoration: none;
+}
+
+@-moz-document url-prefix() {
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: 0;
+    }
+}
+
+.boxTimer,
+#enterInput,
+#resetInput {
+    position: relative;
+    transition: box-shadow 0.01s;
+    z-index: 1000;
+}
+
+.boxTimer:hover,
+#enterInput:hover,
+#resetInput:hover {
+    box-shadow: 0px 0px 4px 0.5px rgba(255, 255, 255, 0.7);
+    z-index: 2;
+}
+
+.navBar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+}
+
+#screenScene {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border: none;
+    border-radius: 100%;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    white-space: nowrap;
+
+    background-color: #292929;
+    transition: box-shadow 0.01s;
+    z-index: 1000;
+    border: 0.1px solid rgba(251, 251, 251, 0.07);
+}
+
+#screenScene:hover {
+    box-shadow: 0px 0px 7px 0.5px rgba(235, 235, 235, 0.7);
+    z-index: 100;
+}
+#bodyMenu{
+    background-image:url('https://images.unsplash.com/photo-1723660544601-f720cc3687c9?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position:center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.menuButtons{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+#clockItem{
+    font-size: 3em;
+}
+
+.information_app {
+    display: flex; /* Cambia de inline a flex */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Alinea el texto al centro dentro de cada elemento */
+}

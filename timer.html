@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <title>Timer</title>
+</head>
+
+<body>
+    <div class="navBar">
+        <a class="linkPage displays menuButtons" href="./initialPage.html">Start</a>
+    </div>
+    <div class="timers">
+        <h1>Timer:</h1>
+        <p>To change timer values, scroll over the numbers:</p>
+        <form id="myForm" method="get" target="_self" autocomplete="off">
+            <div class="boxTimer" id="boxTimer1">
+                <input type="number" id="hours" value="00" min="0" max="99" step="1" readonly>
+                <label for="hours">Horas</label>
+            </div>
+            <div class="boxTimer" id="boxTimer2">
+                <input type="number" id="minutes" value="00" min="0" max="99" step="1" readonly>
+                <label for="hours">Minutos</label>
+            </div>
+            <div class="boxTimer" id="boxTimer3">
+                <input type="number" id="seconds" value="00" min="0" max="99" step="1" readonly>
+                <label for="hours">Segundos</label>
+            </div>
+        </form>
+    </div>
+    <div class="buttons">
+        <div id="enter">
+            <button class="displays" id="enterInput">Enter</button>
+        </div>
+        <div id="reset">
+            <button class="displays" id="resetInput">Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
